@@ -4,11 +4,29 @@
     <title>Syukies0001</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="style.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+    <header class="top-header">
+      <div class = "main-logo">
+        <%= link_to image_tag("logo01.png", class:"head_logo"), "/" %>
+      </div>
+      <div class = "head-wrapper">
+          <%= link_to image_tag("logo02.png", class:"logo"), "/" %>
+        <div class = "signed">
+          <ul class='lists-right'>
+            <% if user_signed_in? %>
+              <li class = "registration"><%= link_to  "current_user.nickname", "#", class: "user-nickname" %></li>
+              <li class = "registration"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+            <% else %>
+              <li class = "registration"><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+              <li class = "registration"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </header>
   <body>
     <%= yield %>
   </body>

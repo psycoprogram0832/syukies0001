@@ -1,0 +1,2 @@
+class Syukie < ApplicationRecord
+end
