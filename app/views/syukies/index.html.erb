@@ -1,16 +1,25 @@
+<div><%= link_to "投稿する", "/syukies/new", class: "new_syukie_btn" %></div>
+
 <div class="wrap">
   <div class="wrap slide-paused" ontouchstart="">
-    <div class="slideshow">
-      <%= link_to image_tag("dammy01.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy02.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy03.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy04.jpg", class:"content hover"), "/" %>
-    </div>
-    <div class="slideshow">
-      <%= link_to image_tag("dammy01.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy02.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy03.jpg", class:"content hover"), "/" %>
-      <%= link_to image_tag("dammy04.jpg", class:"content hover"), "/" %>
-    </div>
+    <% if @syukies.present? %>
+      <div class="slideshow">
+        <%= render partial: "syukie", collection: @syukies %>
+      </div>
+    <% else %>
+      <div class="slideshow">
+        <%= link_to image_tag("dammy01.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy02.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy03.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy04.jpg", class:"content hover"), "/" %>
+      </div>
+      <div class="slideshow">
+        <%= link_to image_tag("dammy01.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy02.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy03.jpg", class:"content hover"), "/" %>
+        <%= link_to image_tag("dammy04.jpg", class:"content hover"), "/" %>
+      </div>
+    <% end %>
   </div>
 </div>
+<%= render "layouts/footer" %>

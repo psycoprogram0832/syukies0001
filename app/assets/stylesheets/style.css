@@ -79,3 +79,41 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+.footer{
+  background-color: #333;
+}
+
+
+.footer-contents{
+  display: flex;
+  justify-content: center;
+}
+
+.details{
+  margin: 100px,100px;
+}
+
+.footer-content-head{
+  color: white;
+}
+
+ul{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  color: white;
+  text-decoration: none;
+}
+
+.logo-white{
+  margin: 0,500px;
+}
+
+.company{
+  text-align: center;
+  color: white;
+}
