@@ -1,4 +1,35 @@
-<div class="contents row">
-  <p><%= @nickname %>さんの投稿一覧</p>
-  <%= render partial: 'syukies/syukie', collection: @syukies %>
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        <%= @nickname %> さんの情報
+      </h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__col1">名前</th>
+            <td class="table__col2"><%= @nickname %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">しゅきぴ</th>
+            <td class="table__col2"><%= @syuki_name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">プロフィール</th>
+            <td class="table__col2"><%= @profile %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">since</th>
+            <td class="table__col2"><%= @since %></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="page-heading">
+        <%= @nickname %>さんのsyukies
+      </h2>
+      <div class="user__card">
+        <%= render partial: 'syukies/syukie', collection: @syukies %>
+      </div>
+    </div>
+  </div>
 </div>
