@@ -1,10 +1,11 @@
-<div><%= link_to "投稿する", "/syukies/new", class: "new_syukie_btn" %></div>
-
+<div class = "cover">
+<div><%= link_to "❤︎今日のしゅきぴは？❤︎", "/syukies/new", class: "new_syukie_btn" %></div>
+</div>
 <div class="wrap">
   <div class="wrap slide-paused" ontouchstart="">
     <% if @syukies.present? %>
       <div class="slideshow">
-        <%= render partial: "syukie", collection: @syukies %>
+        <%= render partial: "syukie", collection: @syukies ,class:"hover"%>
       </div>
     <% else %>
       <div class="slideshow">
@@ -21,5 +22,11 @@
       </div>
     <% end %>
   </div>
+</div>
+<div class = "foot-cover">
+  <div><%= link_to "MY PAGE", "/users/#{current_user.id}", class: "foot-btn" %></div>
+  <div><%= link_to "POST", "/syukies/new", class: "foot-btn" %></div>
+  <div><%= link_to "NEWS", "/syukies/new", class: "foot-btn" %></div>
+  <div><%= link_to "EVENT", "/syukies/new", class: "foot-btn" %></div>
 </div>
 <%= render "layouts/footer" %>
