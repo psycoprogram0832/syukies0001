@@ -1,10 +1,15 @@
 <head>
 <link rel="stylesheet" href="user.css">
 </head>
-<h1>通知表</h1>
 <div class="background">
-
-    <h1>背景画像</h1>
-
+    <h1 class = "grade-title">通知表</h1>
+    <h2 class = "grade-name"><%= @syuki_name %>様</h2>
+    <div class ="grade-param">今週のあなたのしゅきポは<%="param"%>点でした。</div>
+    <div class ="grade-high"><%= "param" %>が一番高得点でした！</div>
+    <div class= "high-dairy"><%= "param" %>だそうです。</div>
+    <div class="grade-low"><%= "param" %>は、ちょっとぴえんでした。</div>
+    <div class="low-dairy">何があったか思い返してみて！</div>
+    <div class ="meet">これからもよろしくね！</div>
+    <div class ="you"><%= @nickname %>より</div>
 </div>
 <%= render "layouts/footer" %>

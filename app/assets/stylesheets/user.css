@@ -61,5 +61,97 @@
 }
 
 .background{
-  background-image:url("../images/dammy04.jpg");
+  margin: auto;
+  background-image:url("syozyo.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 1200px;
+  position: relative;
 }
+
+.grade-title{
+  position: absolute;
+  top : 160px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 50px;
+  border-bottom: 1px solid pink;
+}
+
+.grade-name{
+  position: absolute;
+  font-size: 36px;
+  top: 250px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.grade-param{
+  position: absolute;
+  font-size: 24px;
+  top: 360px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.grade-high{
+  position: absolute;
+  top: 390px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 24px;
+}
+
+.high-dairy{
+  position: absolute;
+  top: 420px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 24px;
+}
+
+.grade-low{
+  position: absolute;
+  top: 450px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 24px;
+}
+
+.low-dairy{
+  position: absolute;
+  top: 480px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 24px;
+}
+
+.meet{
+  position: absolute;
+  top: 550px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 24px;
+}
+
+.you{
+  position: absolute;
+  bottom: 200px;
+  font-size: 36px;
+  left :80%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+
+
+
