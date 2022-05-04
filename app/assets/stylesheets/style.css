@@ -8,10 +8,12 @@
 
 .head-wrapper{
   background-color: lightpink;
-  height: 100px;
+  height: 124px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: #333 3px solid;
+  border-bottom: #333 3px solid;
 }
 
 .lists-right{
@@ -20,14 +22,14 @@
 }
 
 .registration{
+  margin-top: 15px;
   margin-right: 40px;
   text-decoration: none;
   list-style: none;
 }
 
 .logo{
-  margin-left: 64px;
-  margin-top: 10px;
+  margin:20px 0px 20px 70px ;
 }
 
 .user-nickname{
@@ -98,6 +100,8 @@
   align-items: center;
   background-color: lightpink;
   height: 60px;
+  border-top: #333 3px solid;
+  border-bottom: #333 3px solid;
 }
 
 .foot-btn{
@@ -130,10 +134,12 @@
 .company{
   text-align: center;
   color: white;
+  margin-bottom: 50px;
 }
 
 .footer{
   background-color: #333;
+  padding-bottom: 15px;
 }
 
 .footer-contents{
@@ -157,5 +163,44 @@ ul{
   text-decoration: none;
   color: white;
   display: inline;
+  justify-content: center;
+}
+/* user/showのcss */
+
+.main_icon{
+  border-radius: 50%;
+  margin: auto;
+}
+
+.registration{
+margin-left: 20px;
+}
+
+.banner {
+  border: 3px solid #CCCCCC;
+  /* overflow: hidden; */
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.banner-cover {
+  width: 1280px;
+  display: flex;
+}
+.banner-item {
+  /* float: left; */
+  width: 900px;
+}
+
+.slick-prev::before {
+  color: black!important;
+  z-index: 1;
+}
+.slick-next::before {
+  color: black!important;
+}
+
+.grade-cover{
+  display: flex;
   justify-content: center;
 }

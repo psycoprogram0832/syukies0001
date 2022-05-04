@@ -9,4 +9,9 @@ class UsersController < ApplicationController
     @since = user.since
     @nickname = user.nickname
   end
+
+  def grade
+    user = User.find(params[:id])
+    @syukies = Syukie.where("user_id = #{params[:id]}")
+  end
 end

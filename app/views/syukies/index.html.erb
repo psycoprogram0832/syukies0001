@@ -23,10 +23,5 @@
     <% end %>
   </div>
 </div>
-<div class = "foot-cover">
-  <div><%= link_to "MY PAGE", "/users/#{current_user.id}", class: "foot-btn" %></div>
-  <div><%= link_to "POST", "/syukies/new", class: "foot-btn" %></div>
-  <div><%= link_to "NEWS", "/syukies/new", class: "foot-btn" %></div>
-  <div><%= link_to "EVENT", "/syukies/new", class: "foot-btn" %></div>
-</div>
+
 <%= render "layouts/footer" %>

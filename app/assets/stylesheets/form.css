@@ -1,0 +1,87 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.former{
+  display: flex;
+  justify-content: center;
+}
+
+.input-birth-wrap{
+  display: flex;
+  margin:20px 0px 20px 130px; 
+}
+
+.contents_form{
+  margin-bottom: 30px;
+}
+
+.post{
+  color :hotpink;
+}
+
+.select-birth{
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px pink inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form__text{
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px pink inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 20px auto 20px;
+}
+
+.point_form{
+  height: 2.4em;
+  width: 10%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px pink inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 20px auto 20px;
+}
+
+.field{
+  display: inline;
+  justify-content: center;
+  margin: 20px auto 20px;
+}
+
+.file{
+  margin:20px 0px 20px 100px; 
+  text-align: center;
+}
+
+.titles{
+  text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.content_form{
+  text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.actions{
+  display: flex;
+  justify-content:center;
+}

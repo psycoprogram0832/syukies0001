@@ -1,35 +1,46 @@
+<head>
+<link rel="stylesheet" href="user.css">
+</head>
 <div class="main">
   <div class="inner">
     <div class="user__wrapper">
+      <div class = "avatar_cover">
+        <%= image_tag current_user.avatar.url, class: 'user_avatar' %>
+        <h2 class="syukies_name">
+          <%= @nickname %>&<%= @syuki_name %>
+        </h2>        
+          <table class="table">
+          <tbody>
+            <tr>
+              <th class="table__col1"><i class="fa-solid fa-heart"></i></th>
+              <td class="table__col2"><%= @syuki_name %></td>
+            </tr>
+
+            <tr>
+              <th class="table__col1"><i class="fa-solid fa-calendar-check"></i></th>
+              <td class="table__col2"><%= @since %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <div class ="user_profile">
+          <div class="profile_card">❤︎Profile❤︎</div>
+        </div>
+        <div class="profile_text">
+        <%= @profile %>
+        </div>
+          <div class ="grade-cover">
+            <%= link_to '通知表', grade_user_path(current_user.id), class: "grade-btn" %>
+          </div>
+        <hr>
       <h2 class="page-heading">
-        <%= @nickname %> さんの情報
+        思い出リスト
       </h2>
-      <table class="table">
-        <tbody>
-          <tr>
-            <th class="table__col1">名前</th>
-            <td class="table__col2"><%= @nickname %></td>
-          </tr>
-          <tr>
-            <th class="table__col1">しゅきぴ</th>
-            <td class="table__col2"><%= @syuki_name %></td>
-          </tr>
-          <tr>
-            <th class="table__col1">プロフィール</th>
-            <td class="table__col2"><%= @profile %></td>
-          </tr>
-          <tr>
-            <th class="table__col1">since</th>
-            <td class="table__col2"><%= @since %></td>
-          </tr>
-        </tbody>
-      </table>
-      <h2 class="page-heading">
-        <%= @nickname %>さんのsyukies
-      </h2>
+      <hr>
       <div class="user__card">
         <%= render partial: 'syukies/syukie', collection: @syukies %>
       </div>
     </div>
   </div>
 </div>
+<%= render "layouts/footer" %>

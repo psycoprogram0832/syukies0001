@@ -1,14 +1,14 @@
 <%= form_with model: @syukie, local: true do |f|%>
   <div class="field">
-    <%= f.label :date, "❤︎Date❤︎" %><br />
+    <div class = "titles"><%= f.label :date, "❤︎Date❤︎" %></div>
     <div class='input-birth-wrap'>
       <%= raw sprintf(
                   f.date_select(
                     :date,
-                    class:'select-birth',
+                    class:"select-birth",
                     id:"date",
                     use_month_numbers: true,
-                    prompt:'--',
+                    prompt:'---',
                     start_year: 2021,
                     end_year: (Time.now.year),
                     date_separator: '%s'),
@@ -17,18 +17,18 @@
   </div>
 
   <div class="field">
-    <%= f.label :image, "❤︎PHOTO❤︎" %><br />
-    <%= f.file_field :image, id:"syukie_image" %>
+    <div class = "titles"><%= f.label :image, "❤︎PHOTO❤︎" %></div>
+    <div class = "file"><%= f.file_field :image, id:"syukie_image" %></div>
   </div>
 
   <div class="field">
-    <%= f.label :point, "❤︎今日のしゅきポイント❤︎" %><br />
-    <%= f.text_field :point, class: :form__text, id:"syukie_point" %>
-  </div>
+    <div class = "titles"><%= f.label :point, "❤︎今日のしゅきポイント❤︎" %></div>
+    <div class = "content_form">今日のしゅきぴは<%= f.text_field :point, class: :point_form, id:"syukie_point" %>点でした。</div>
+  </div><br />
 
   <div class="field">
-    <%= f.label :diary, "❤︎DIARY❤︎" %><br />
-    <%= f.text_area :diary, class: :form__text, id:"syukie_diary" %>
+    <div class= "titles"><%= f.label :diary, "❤︎DIARY❤︎" %></div>
+    <%= f.text_area :diary, placeholder: "ひとこと日記を書こう！", class: :form__text, id:"syukie_diary" %>
   </div>
 
   <div class="actions">

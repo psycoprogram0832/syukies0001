@@ -1,7 +1,21 @@
-  <div class='baner'>
-    <%= link_to image_tag("frige01.png", class:"frige"), "#" %>
-  </div>
+<div class = "foot-cover">
+  <% if user_signed_in? %>
+  <div><%= link_to "MY PAGE", "/users/#{current_user.id}", class: "foot-btn" %></div>
+  <% else %>
+  <div><%= link_to "MY PAGE", new_user_registration_path, class: "foot-btn" %></div>
+  <% end %>
+  <div><%= link_to "POST", "/syukies/new", class: "foot-btn" %></div>
+  <div><%= link_to "NEWS", "https://twitter.com/program0832", class: "foot-btn" %></div>
+  <div><%= link_to "EVENT", "/syukies/new", class: "foot-btn" %></div>
+</div>
 
+<div class ="banner">
+  <div class = banner-cover>
+    <div class="banner-item"><%= link_to image_tag("frige01.png", class:"frige"), "#" %></div>
+    <div class="banner-item"><%= link_to image_tag("baner01.jpeg", class:"frige"), "#" %></div>
+    <div class="banner-item"><%= link_to image_tag("baner02.png", class:"frige"), "#" %></div>
+  </div>
+</div>
 <div class='footer'>
   <div class='footer-contents'>
     <div class='details'>
@@ -30,8 +44,7 @@
     </div>
   </div>
   <div class ="logo-cover"> 
-    <%= link_to image_tag("logo02.png", class:"logo-white"), "#" %>
-    
+    <%= link_to image_tag("whitelogo.png", class:"logo-white"), "#" %>
   </div>
-  <p class ="company">© syukies</p>
+  <div class ="company">© syukies</div>
 </div>

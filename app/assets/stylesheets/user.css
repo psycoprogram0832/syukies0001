@@ -1,0 +1,65 @@
+.user__card{
+  display: flex;
+  justify-content: center;
+}
+
+.hover{
+  height: 400px;
+}
+
+.page-heading{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Hachi Maru Pop', cursive;
+  color: black;
+}
+
+.table{
+  display: flex;
+  justify-content: center;
+}
+
+.avatar_cover{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 24px;
+}
+.syukies_name{
+  position: absolute;
+  color: white;
+  top :0;
+  left: 520px;
+  font-size: 32px;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.table{
+  position: absolute;
+  bottom: 10px;
+  left: 505px;
+  color:white;
+}
+
+.user_profile{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;  
+}
+
+.profile_card{
+  font-size: 32px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.profile_text{
+  margin-top: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.background{
+  background-image:url("../images/dammy04.jpg");
+}
