@@ -1,67 +1,84 @@
-<h2>Sign up</h2>
+<div class="up_head">アカウントをお持ちの方は<%= render "devise/shared/links" %></div>
+<div class ="frame">
+  <form name="login_form">
+    <div class="login_form_top">
+      <h1>Sign Up</h1>
+      <p>各項目をご入力の上、「sigh up」ボタンをクリックしてください。</p>
+    </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+      <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+      <div class="login_form_btm">
+      <div class = "form_name">
+        <%= f.label :email %></div><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+      <div class="login_form_btm">
+        <div class = "form_name">
+        <%= f.label :password %></div>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+      <div class="login_form_btm">
+        <div class = "form_name">
+        <%= f.label :password_confirmation %></div><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :nickname, "ユーザー名" %><br />
-    <%= f.text_field :nickname, id:"user_name" %>
-  </div>
+      <div class="login_form_btm">
+        <div class = "form_name">   
+        <%= f.label :nickname, "ユーザー名" %></div><br />
+        <%= f.text_field :nickname, id:"user_name" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :syuki_name, "しゅきぴの名前" %><br />
-    <%= f.text_field :syuki_name, id:"syuki_name" %>
-  </div>
+      <div class="login_form_btm">
+        <div class = "form_name">
+        <%= f.label :syuki_name, "しゅきぴの名前" %></div>
+        <br />
+        <%= f.text_field :syuki_name, id:"syuki_name" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :profile, "二人のプロフィール" %><br />
-    <%= f.text_area :profile, class: :form__text, id:"profile" %>
-  </div>
+      <div class="login_form_btm">
+        <div class = "form_name">
+        <%= f.label :profile, "二人のプロフィール" %></div><br />
+        <%= f.text_area :profile, class: :form__text, id:"profile" %>
+      </div>
 
-  <div class='form-text-wrap'>
-    <label class="form-text">since</label>
-    <span class="indispensable">必須</span>
-  </div>
-  <div class='input-since-wrap'>
-    <%= raw sprintf(
-                  f.date_select(
-                    :since,
-                    class:'select-birth',
-                    id:"birth-date",
-                    use_month_numbers: true,
-                    prompt:'--',
-                    start_year: 1930,
-                    end_year: (Time.now.year),
-                    date_separator: '%s'),
-                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
-  </div>
-  <div>
-    <%= f.label :avatar %>
-    <%= f.file_field :avatar, onchange: 'previewImage()', class: 'form-control' %>
-    <%# <%= f.hidden_field :avatar_cache %>
-    <%# <%= image_tag @user.avatar.url, class: 'rounded-circle mt-3', id: 'preview', size: '100x100' %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+      <div class='form-text-wrap'>
+        <div class = "form_name">
+        <label class="form-text">since</label>
+        </div>
+      </div>
+      <div class='input-since-wrap'>
+        <%= raw sprintf(
+                      f.date_select(
+                        :since,
+                        class:'select-birth',
+                        id:"birth-date",
+                        use_month_numbers: true,
+                        prompt:'--',
+                        start_year: 1930,
+                        end_year: (Time.now.year),
+                        date_separator: '%s'),
+                      "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+      </div>
+      <div>
+        <div class ="form_name">
+        <%= f.label :avatar %></div>
+        <%= f.file_field :avatar, onchange: 'previewImage()', class: 'form-control' %>
+        <%# <%= f.hidden_field :avatar_cache %>
+        <%# <%= image_tag @user.avatar.url, class: 'rounded-circle mt-3', id: 'preview', size: '100x100' %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+  </form>
+</div>
 
-<%= render "devise/shared/links" %>
+<div class="foot"><%= render "layouts/footer" %></div>

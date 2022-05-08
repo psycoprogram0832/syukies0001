@@ -76,13 +76,13 @@
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 50px;
-  border-bottom: 1px solid pink;
+  font-size: 56px;
+  border-bottom: 2px solid pink;
 }
 
 .grade-name{
   position: absolute;
-  font-size: 36px;
+  font-size: 48px;
   top: 250px;
   left :50%;
   transform: translate(-50%, 0%);
@@ -90,68 +90,69 @@
 }
 
 .grade-param{
+  width: 800px;
   position: absolute;
-  font-size: 24px;
-  top: 360px;
+  font-size: 36px;
+  top: 370px;
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
+}
+
+span {
+  color: deeppink;
 }
 
 .grade-high{
   position: absolute;
-  top: 390px;
+  top: 400px;
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .high-dairy{
   position: absolute;
-  top: 420px;
+  top: 440px;
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .grade-low{
-  position: absolute;
-  top: 450px;
-  left :50%;
-  transform: translate(-50%, 0%);
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 24px;
-}
-
-.low-dairy{
   position: absolute;
   top: 480px;
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 24px;
+  font-size: 32px;
+}
+
+.low-dairy{
+  position: absolute;
+  top: 520px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
 }
 
 .meet{
   position: absolute;
-  top: 550px;
+  top: 560px;
   left :50%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .you{
   position: absolute;
-  bottom: 200px;
-  font-size: 36px;
-  left :80%;
+  bottom: 180px;
+  font-size: 48px;
+  left :75%;
   transform: translate(-50%, 0%);
   font-family: 'Hachi Maru Pop', cursive;
 }
-
-
-
-
