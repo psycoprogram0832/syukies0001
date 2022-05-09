@@ -25,13 +25,14 @@ Syukies
  # 洗い出した要件
  https://docs.google.com/spreadsheets/d/1gEF9F1fxHJBbanGxZ3G--AopwZhS2Nlh0tVrVafQWa8/edit#gid=982722306
  
- #　実装した機能についての画像やGIFおよびその説明
+#　実装した機能についての画像やGIFおよびその説明
  
  # 実装予定の機能
  現在は週間の集計しか出ない状況ですが、月間や、記念日に特別な表示に変わる機能。
  定期イベントの開催を実装予定。
  
- #　データベース設計
+#　データベース設計
+ 
  [![Image from Gyazo](https://i.gyazo.com/872ffd25ddb140fadd691e2ab3d79b3c.png)](https://gyazo.com/872ffd25ddb140fadd691e2ab3d79b3c)
 
 # 画面遷移図
