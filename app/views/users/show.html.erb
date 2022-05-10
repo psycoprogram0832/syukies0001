@@ -7,18 +7,18 @@
       <div class = "avatar_cover">
         <%= image_tag current_user.avatar.url, class: 'user_avatar' %>
         <h2 class="syukies_name">
-          <%= @nickname %>&<%= @syuki_name %>
+          <%= @user.nickname %>&<%= @user.syuki_name %>
         </h2>        
           <table class="table">
           <tbody>
             <tr>
               <th class="table__col1"><i class="fa-solid fa-heart"></i></th>
-              <td class="table__col2"><%= @syuki_name %></td>
+              <td class="table__col2"><%= @user.syuki_name %></td>
             </tr>
 
             <tr>
               <th class="table__col1"><i class="fa-solid fa-calendar-check"></i></th>
-              <td class="table__col2"><%= @since %></td>
+              <td class="table__col2"><%= @user.since %></td>
             </tr>
           </tbody>
         </table>
@@ -27,7 +27,7 @@
           <div class="profile_card">❤︎Profile❤︎</div>
         </div>
         <div class="profile_text">
-        <%= @profile %>
+        <%= @user.profile %>
         </div>
           <div class ="grade-cover">
             <%= link_to '通知表', grade_user_path(current_user.id), class: "grade-btn" %>
