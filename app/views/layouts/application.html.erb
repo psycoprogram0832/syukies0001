@@ -18,10 +18,10 @@
   </head>
     <header class="top-header">
       <div class = "main-logo">
-        <%= link_to image_tag("logo01.png", class:"head_logo"), "/" %>
+        <%= link_to image_tag("logo01.png", class:"head_logo"), root_path %>
       </div>
       <div class = "head-wrapper">
-          <%= link_to image_tag("logo02.png", class:"logo"), "/" %>
+          <%= link_to image_tag("logo02.png", class:"logo"), root_path %>
         <div class = "signed">
           <ul class='lists-right'>
             <% if user_signed_in? %>
