@@ -3,15 +3,14 @@
 </head>
 <div class="background">
     <h1 class = "grade-title">通知表</h1>
-    <h2 class = "grade-name"><%= @syuki_name %>様</h2>
-    <div class ="grade-param">今週のあなたのしゅきポは<span><%= @syukie.point %>点</span>でした。</div>
-    <p class ="grade-high"><%= "param" %>が一番高得点でした！</p>
-    <p class= "high-dairy"><%= "param" %>だそうです。</p>
-    <p class="grade-low"><%= "param" %>は、ちょっとぴえんでした。</p>
+    <h2 class = "grade-name"><%= @user.syuki_name %>様</h2>
+    <div class ="grade-param">今週のあなたのしゅきポは<span><%= @ave %>点</span>でした。</div>
+    <p class ="grade-high"><%= @highdate %>が一番高得点でした！</p>
+    <p class= "high-dairy"><%= "@highdate.diary" %>だそうです。</p>
+    <p class="grade-low"><%= @lowdate %>は、ちょっとぴえんでした。</p>
     <p class="low-dairy">何があったか思い返してみて！</p>
     <p class ="meet">これからもよろしくね！</p>
-    <div class ="you"><%= @nickname %>より</div>
-    param_count
+    <div class ="you"><%= @user.nickname %>より</div>
 </div>
 
 <%= render "layouts/footer" %>

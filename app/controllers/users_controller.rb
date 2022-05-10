@@ -11,27 +11,30 @@ class UsersController < ApplicationController
   end
 
   def grade
-    user = User.find(params[:id])
-    # @syukies = Syukie.where("user_id = #{params[:id]}")
-    @syukie = Syukie.where("user_id = #{params[:id]}").first
-    @profile = user.profile
-    @syuki_name = user.syuki_name
-    @since = user.since
-    @nickname = user.nickname
-    # @param_count = (param_count)
-  end
-
-  def param_count
-    user = User.find(params[:id])
-    @syukies = Syukie.where("user_id = #{params[:id]}")
-    numbers = [] 
-    @points = user.syukies.points
-    numbers <= @points
-    numbers.length
-    sum_of_number = 0
-    numbers.each do |number|
-    sum_of_number = sum_of_number + number # 順番に足す
+    @user = User.find(params[:id])
+    @syukie = Syukie.where("user_id = #{params[:id]}")
+    syukie_array = Syukie.where("user_id = #{params[:id]}")
+    now = Time.current
+    points = []
+    syukie_array.each do |syukie|
+      if syukie.created_at <= now && syukie.created_at >= now.ago(7.days)
+        points << syukie.point
+      end
     end
-    puts sum_of_number / numbers.length
+    dates = []
+    syukie_array.each do |syukie|
+      if syukie.created_at <= now && syukie.created_at >= now.ago(7.days)
+        dates << syukie.date
+      end
+    end
+    diarys = {}
+    syukie_array.each do |syukie|
+      if syukie.created_at <= now && syukie.created_at >= now.ago(7.days)
+        diarys << syukie.dates.max.diary
+      end
+    end
+    @ave = points.sum(0.0) / points.length
+    @highdate = dates.max
+    @lowdate = dates.min
   end
 end
