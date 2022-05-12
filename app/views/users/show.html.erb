@@ -7,7 +7,7 @@
       <div class = "avatar_cover">
         <%= image_tag current_user.avatar.url, class: 'user_avatar' %>
         <h2 class="syukies_name">
-          <%= @user.nickname %>&<%= @user.syuki_name %>
+          <%= @user.nickname %>　&　<%= @user.syuki_name %>
         </h2>        
           <table class="table">
           <tbody>
@@ -30,7 +30,18 @@
         <%= @user.profile %>
         </div>
           <div class ="grade-cover">
-            <%= link_to '通知表', grade_user_path(current_user.id), class: "grade-btn" %>
+            <div class="btn btn-border"><%= link_to '通知表を見る', grade_user_path(current_user.id), class: "spin" %></div>
+            <%# <a class="btn btn-border" href= grade_user_path(current_user.id)><span>通知表</span></a> %>
+          </div>
+          <div class = "foot-menu">
+            <% if user_signed_in? %>
+            <div><%= link_to "マイページ編集", edit_user_registration_path, class: "menu-btn" %></div>
+            <% else %>
+            <div><%= link_to "MY PAGE", new_user_registration_path, class: "menu-btn" %></div>
+            <% end %>
+            <div><%= link_to "投稿する", "/syukies/new", class: "menu-btn" %></div>
+            <div><%= link_to "通知表", "https://twitter.com/program0832", class: "menu-btn" %></div>
+            <div><%= link_to "トップへ", "/syukies/new", class: "menu-btn" %></div>
           </div>
         <hr>
       <h2 class="page-heading">
@@ -43,4 +54,3 @@
     </div>
   </div>
 </div>
-<%= render "layouts/footer" %>

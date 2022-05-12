@@ -4,6 +4,16 @@ class UsersController < ApplicationController
     @syukies = Syukie.where("user_id = #{params[:id]}")
   end
 
+  def edit
+
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+
   def grade
     @user = User.find(params[:id])
     @syukie = Syukie.where("user_id = #{params[:id]}")
@@ -21,12 +31,12 @@ class UsersController < ApplicationController
         dates << syukie.date
       end
     end
-    diarys = {}
-    syukie_array.each do |syukie|
-      if syukie.created_at <= now && syukie.created_at >= now.ago(7.days)
-        diarys << syukie.dates.max.diary
-      end
-    end
+    # diarys = {}
+    # syukie_array.each do |syukie|
+    #   if syukie.created_at <= now && syukie.created_at >= now.ago(7.days)
+    #     diarys << syukie.dates.max.diary
+    #   end
+    # end
     @ave = points.sum(0.0) / points.length
     @highdate = dates.max
     @lowdate = dates.min

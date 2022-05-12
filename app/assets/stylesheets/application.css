@@ -204,3 +204,521 @@ margin-left: 20px;
   display: flex;
   justify-content: center;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.former{
+  display: flex;
+  justify-content: center;
+}
+
+.input-birth-wrap{
+  display: flex;
+  margin:20px 0px 20px 130px; 
+}
+
+.contents_form{
+  margin-bottom: 30px;
+}
+
+.post{
+  color :hotpink;
+}
+
+.select-birth{
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px pink inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form__text{
+  height: 2.4em;
+  width: 80%;
+  padding: 0 16px;
+  border-radius: 24px;
+  box-shadow: 0 0 0 1px pink inset;
+  border: 2px solid #ff69b4;
+  margin: 0px auto;
+}
+
+.point_form{
+  height: 2.4em;
+  width: 10%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 2px solid #ff69b4;
+  transition: 0.25s;
+}
+
+.field{
+  display: inline;
+  justify-content: center;
+  margin: 20px auto 20px;
+}
+
+.file{
+  margin:20px 0px 20px 100px; 
+  text-align: center;
+}
+
+.titles{
+  text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.content_form{
+  text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.actions{
+  display: flex;
+  justify-content:center;
+}
+
+.input-since-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.form_page{
+  height: 650px;
+  margin-top: 30px;
+
+}
+
+.login_form_top{
+  margin-bottom: 30px;
+}
+
+.frame{
+  position: relative;
+  height: 1200px;
+  margin-bottom: auto;
+}
+
+.login_form {
+  width: 600px;
+  padding: 40px 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-0%);
+  background-color: #000;
+  text-align: center;
+}
+
+.login_form h1,.login_form p {
+  color: white;
+  font-weight: 500;
+}
+
+form p {
+  font-size: 10px;
+}
+
+form input {
+  background: none;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #ff69b4;
+  background-color: white;
+  padding: 15px 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  text-align: center;
+}
+
+form input:focus {
+  width: 280px;
+  background-color: #f0f8ff;
+}
+
+form input[type = "submit"] {
+  background-color: white;
+}
+
+
+form input[type = "submit"]:hover {
+  background-color: #ff69b4;
+  border: 2px solid #ff69b4;
+}
+
+.form_name{
+  color: white;
+  margin-bottom: -5px;
+}
+
+.foot{
+  margin-top: 25%;
+}
+
+.form-control{
+  width: 80%;  
+}
+
+.up_head{
+  margin-left: 10%;
+  margin-top: 56px;
+  font-size: 20px;  
+}
+
+.avatar_form{
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+.user__card{
+  display: flex;
+  justify-content: center;
+}
+
+.hover{
+  height: 400px;
+}
+
+.page-heading{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Hachi Maru Pop', cursive;
+  color: black;
+}
+
+.table{
+  display: flex;
+  justify-content: center;
+}
+
+.avatar_cover{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 24px;
+}
+.syukies_name{
+  position: absolute;
+  color: white;
+  top :0;
+  left: 36%;
+  font-size: 32px;
+  font-family: 'Hachi Maru Pop', cursive;
+  background-color:rgba(5,0,0,0.5);
+  padding: 8px;
+}
+
+.table{
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+  color:white;
+  background-color:rgba(5,0,0,0.5);
+}
+
+.user_profile{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;  
+}
+
+.profile_card{
+  font-size: 32px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.profile_text{
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.background{
+  margin: auto;
+  background-image:url("syozyo.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 1200px;
+  position: relative;
+}
+
+.grade-title{
+  position: absolute;
+  top : 160px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 56px;
+  border-bottom: 2px solid pink;
+}
+
+.grade-name{
+  position: absolute;
+  font-size: 48px;
+  top: 250px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.grade-param{
+  width: 800px;
+  position: absolute;
+  font-size: 36px;
+  top: 370px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+span {
+  color: deeppink;
+}
+
+.grade-high{
+  position: absolute;
+  top: 400px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.high-dairy{
+  position: absolute;
+  top: 440px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.grade-low{
+  position: absolute;
+  top: 480px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.low-dairy{
+  position: absolute;
+  top: 520px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.meet{
+  position: absolute;
+  top: 590px;
+  left :50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 32px;
+}
+
+.you{
+  position: absolute;
+  bottom: 150px;
+  font-size: 48px;
+  left :75%;
+  transform: translate(-50%, 0%);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.foot-menu{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: lightpink;
+  height: 60px;
+  border-top: #333 3px solid;
+  border-bottom: #333 3px solid;
+}
+
+.menu-btn{
+  font-size: 30px;
+  font-family: 'Hachi Maru Pop', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+.btn,
+div.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+div.btn-border {
+  margin-bottom: 12px;
+  padding: 10px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border: 2px solid #000;
+  background-image: -webkit-repeating-linear-gradient(
+    135deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.btn-border .spin {
+  position: relative;
+  display: block;
+  padding: 1.25rem 3rem;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.btn-border:hover {
+  margin: 4px 4px 12px;
+  padding: 6px;
+}
+
+.prototype__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.syukie__image{
+  height: 600px;
+}
+
+.syukie_photo{
+  height: 550px;
+}
+
+.datal{
+  background-color: rgba(5,0,0,0.5);
+  width: 60%;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 16px;
+}
+
+.caplle{
+  font-size: 42px;
+  font-family: 'Hachi Maru Pop', cursive;
+  color: #000;
+  background-color:lightpink;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 16px;
+  border-bottom: 5px solid rgba(5,0,0,0.5);
+}
+
+.syukie__user{
+  text-decoration: none;
+  color: #000;
+}
+
+.detail__title{
+  font-size: 32px;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.dairys{
+  font-size: 36px;
+  font-family: 'Hachi Maru Pop', cursive;
+  border: 2px solid;
+  padding: 20px 40px;
+  margin-top: 16px;
+  border-radius: 9px;
+  background-color: lightpink;
+}
+
+.points{
+  font-size: 36px;
+  font-family: 'Hachi Maru Pop', cursive;
+  background-color: lightpink;
+  width: 30%;
+  text-align: center;
+  padding: 16px;
+  border: #000 solid 3px;
+  margin-bottom: 16px;
+}
+
+.editbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5,0,0,0.5);
+  height: 60px;
+  width: 30%;
+  margin:16px auto;
+}
+
+.prototype__btn{
+font-size: 24px;
+text-decoration: none;
+color: #fff;
+margin-right: 20px;
+padding: 30px;
+font-family: 'Hachi Maru Pop', cursive;
+}

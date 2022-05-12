@@ -6,11 +6,9 @@
     <h2 class = "grade-name"><%= @user.syuki_name %>様</h2>
     <div class ="grade-param">今週のあなたのしゅきポは<span><%= @ave %>点</span>でした。</div>
     <p class ="grade-high"><%= @highdate %>が一番高得点でした！</p>
-    <p class= "high-dairy"><%= "@highdate.diary" %>だそうです。</p>
+    <p class= "high-dairy">いつもありがとう！</p>
     <p class="grade-low"><%= @lowdate %>は、ちょっとぴえんでした。</p>
     <p class="low-dairy">何があったか思い返してみて！</p>
     <p class ="meet">これからもよろしくね！</p>
     <div class ="you"><%= @user.nickname %>より</div>
 </div>
-
-<%= render "layouts/footer" %>

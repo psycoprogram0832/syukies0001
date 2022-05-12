@@ -1,34 +1,37 @@
-<main class="main">
+<div class="main">
   <div class="inner">
     <div class="prototype__wrapper">
-      <p class="prototype__hedding">
-        <%= @syukie.date %>
-      </p>
-      <%= link_to @syukie.user.nickname, user_path(@syukie.user.id), class: :syukie__user %>&<%= link_to @syukie.user.syuki_name, user_path(@syukie.user.id) %>
-
-      <div class="syukie__image">
-        <%= image_tag @syukie.image %>
-      </div>
-      <div class="syukie__body">
-        <div class="prototype__detail">
-          <p class="detail__title">思い出</p>
-          <p class="detail__message">
-            <%= @syukie.diary %>
-          </p>
-        </div>
-        <div class="prototype__detail">
-          <p class="detail__title">❤︎しゅき偏差値❤︎</p>
-          <p class="syuki__point">
-            <%= @syukie.point %>
-          </p>
-        </div>
-        <% if current_user == @syukie.user %>
-          <div class="syukie__manage">
-            <%= link_to "編集する", edit_syuky_path(@syukie.id), class: :prototype__btn %>
-            <%= link_to "削除する", syuky_path(@syukie.id), method: :delete, class: :prototype__btn %> 
-          </div>
-        <% end %>
+      <div class ="datal"><%= @syukie.date %></div>
+    </div>
+    <div class="prototype__wrapper">
+      <div class ="caplle">
+      <%= link_to @syukie.user.nickname, user_path(@syukie.user.id), class: :syukie__user %>&<%= link_to @syukie.user.syuki_name, user_path(@syukie.user.id),class: :syukie__user %>
       </div>
     </div>
+    <div class="prototype__wrapper">
+      <div class="syukie__image">
+        <%= image_tag @syukie.image, class: "syukie_photo"%>
+      </div>
+    </div>
+    <div class="prototype__wrapper">
+      <div class="detail__title">❤︎思い出❤︎</div>
+    </div>
+    <div class="prototype__wrapper">
+      <div class ="dairys"><%= @syukie.diary %></div>
+    </div>
+    <div class="prototype__wrapper">
+        <p class="detail__title">❤︎しゅき偏差値❤︎</p>
+    </div>
+    <div class="prototype__wrapper">
+      <div class="points"><%= @syukie.point %>point!</div>
+    </div>
+    <div class="editbox">
+      <% if current_user == @syukie.user %>
+        <div class="syukie__manage">
+          <%= link_to "編集する", edit_syuky_path(@syukie.id), class: :prototype__btn %>
+          <%= link_to "削除する", syuky_path(@syukie.id), method: :delete, class: :prototype__btn %> 
+        </div>
+      <% end %>
+    </div>
   </div>
-</main>
+</div>
