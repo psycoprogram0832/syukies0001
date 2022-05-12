@@ -10,7 +10,8 @@ Syukies
  https://syukies0001.herokuapp.com/
  
  # テスト用アカウント
- 未設定
+ 　email:test@test
+  password:test01
  
  # 利用方法
  ・サインアップでアカウントを作る
