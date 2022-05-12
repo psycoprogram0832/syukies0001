@@ -11,7 +11,8 @@ Syukies
  
  # テスト用アカウント
  　email:test@test
-  password:test01
+  
+   password:test01
  
  # 利用方法
  ・サインアップでアカウントを作る
@@ -32,7 +33,7 @@ Syukies
  現在は週間の集計しか出ない状況ですが、月間や、記念日に特別な表示に変わる機能。
  定期イベントの開催を実装予定。
  
-#　データベース設計
+# データベース設計
  
  [![Image from Gyazo](https://i.gyazo.com/872ffd25ddb140fadd691e2ab3d79b3c.png)](https://gyazo.com/872ffd25ddb140fadd691e2ab3d79b3c)
 
@@ -91,13 +92,6 @@ Things you may want to cover:
 | profile            | text   | null: false |
 | since              | text   | null: false |
 
-## comments テーブル
-
-| Column             | Type   | Options     |
-| ------------------ | ------ | ----------- |
-| content            | text   | null: false |
-| syukie             | references | null: false, foreign_key: true |
-| user               | references | null: false, foreign_key: true |
 
 
 ## syukies テーブル
