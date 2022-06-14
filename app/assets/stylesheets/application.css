@@ -3,7 +3,6 @@
   justify-content: center;
   margin-top: 24px;
   margin-bottom: 16px;
-
 }
 
 .head-wrapper{
@@ -111,7 +110,7 @@
   color: black;
 }
 
-.baner{
+.banner{
   height: 260px;
   display: flex;
   justify-content: center;
@@ -149,7 +148,8 @@
 
 .footer-content-head{
   color: white;
-  padding: 0 30px;
+  padding: 20px 20px;
+  text-align: center;
 }
 
 .footer-link{
@@ -192,12 +192,25 @@ margin-left: 20px;
   width: 900px;
 }
 
+.slick-slider{
+  width: 100%;
+}
+
 .slick-prev::before {
-  color: black!important;
+  color: black;
   z-index: 1;
 }
 .slick-next::before {
-  color: black!important;
+  color: black;
+}
+
+.slick-prev
+{
+    left: 1%;
+}
+.slick-next
+{
+    right: 1%;
 }
 
 .grade-cover{
@@ -721,4 +734,55 @@ color: #fff;
 margin-right: 20px;
 padding: 30px;
 font-family: 'Hachi Maru Pop', cursive;
+}
+
+@media (max-width: 600px){
+  .head_logo{
+    height: 80px;
+  }
+
+  .head-wrapper{
+    height: 80px;
+  }
+
+  .logo{
+    height :40px;
+  }
+
+  .user-nickname{
+    font-size: 16px;
+  }
+
+  .slideshow{
+    height: 300px;
+  }
+
+  .hover{
+    height: 100%;
+  }
+
+  .banner-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frige{
+    height: 130px;
+  }
+
+  .slick-arrow:before{
+    content:""!important;
+  }
+  .footer-link{
+    font-size: 6px;
+  }
+
+.logo-white{
+  height: 60px;
+}
+
+/* 以下サインアップ・サインイン画面 */
+
+
+
 }
